@@ -44,26 +44,26 @@
     
             <div class="contact-wrapper">
                 <div class="contact-form">
-                    <form action="">
+                    <form action="enviar-form.php" method="post">
                         <p>
                             <label>Nombre completo</label>
-                            <input type="text" name="fullname">
+                            <input type="text" id="nombre" name="nombre" required>
                         </p>
                         <p>
                             <label>Correo</label>
-                            <input type="email" name="email">
+                            <input type="email" id="email" name="email" required>
                         </p>
                         <p>
                             <label>Telefono</label>
-                            <input type="tel" name="phone">
+                            <input type="tel" id="phone" name="phone" required>
                         </p>
                         <p>
                             <label>Asunto</label>
-                            <input type="text" name="asunto">
+                            <input type="text" id="asunto" name="asunto">
                         </p>
                         <p>
                             <label class="block">Mensaje</label>
-                            <textarea name="message" rows="3"></textarea>
+                            <textarea id="mensaje" name="mensaje" rows="3"></textarea>
                         </p>
                         <p class="block">
                             <button type="submit">
@@ -128,5 +128,8 @@
     <a href="https://api.whatsapp.com/send?phone=573104049506" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
     </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 </html>
