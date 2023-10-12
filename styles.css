@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.952);
+    font-family: 'Gabarito', sans-serif;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 100%;
+    min-height: 10vh;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.header .nav{
+    font-size: 25px;
+    display: flex;
+    gap: 40px;
+}
+
+.header .nav a{
+    color: aliceblue;
+}
+
+.header .nav a:hover{
+    color: #E30032;
+    transition: all .4s ease;
+}
+
+.seccionUno {
+    width: 100%;
+    min-height: 80vh;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 200px;
+}
+
+.seccionUno .contenedorUno{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seccionUno .contenedorUno h1,
+.seccionUno .contenedorUno p{
+    max-width: 500px;
+}
+
+.seccionUno .contenedorUno h1{
+    font-size: 60px;
+}
+
+.seccionUno .contenedorUno p{
+    font-size: 20px;
+}
+
+.seccionUno .contenedorUno .botones a{
+    color: aliceblue;
+    border: 2px solid #E30032;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.seccionUno .contenedorUno .botones{
+    display: flex;
+    gap: 20px;
+}
+
+.seccionUno .contenedorUno .botones a:hover{
+    background-color: #E30032;
+    border: 2px solid aliceblue;
+    transition: all .4s ease;
+}
+
+.seccionUno .contenedorDos img{
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid #E30032;
+}
+
+.seccionDos {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionDos .contenedorUno{
+    background-color: rgba(165, 165, 165, 0.062);
+    width: 80%;
+    padding: 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.seccionDos .contenedorUno h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+.seccionDos .contenedorUno p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.seccionDos .contenedorUno .tecnologias img{
+    width: 80px;
+}
+
+.seccionDos .contenedorUno .tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.seccionTres{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionTres .contenedorUno h2{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.seccionTres .contenedorUno{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seccionTres .contenedorUno .cards img{
+    width: 350px;
+    border-bottom: 5px solid #E30032;
+}
+
+.seccionTres .contenedorUno .cards p{
+    max-width: 320px;
+}
+
+.seccionTres .contenedorUno .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.seccionTres .contenedorUno .cards .card{
+    background-color: rgba(165, 165, 165, 0.062);
+    border: 5px solid #E30032;
+    border-radius: 10px;
+    min-height: 50vh;
+}
+
+.seccionTres .contenedorUno .cards .card h3,
+.seccionTres .contenedorUno .cards .card p,
+.seccionTres .contenedorUno .cards .card a{
+    margin: 15px;
+}
+
+.seccionTres .contenedorUno .cards .card a{
+    color: aliceblue;
+    border: 2px solid #E30032;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.seccionTres .contenedorUno .cards .card p{
+    margin-bottom: 40px;
+}
+
+.seccionTres .contenedorUno .cards .card a:hover{
+    background-color: #E30032;
+    border: 2px solid aliceblue;
+    transition: all .4s ease;
+}
+
+.seccionTres .contenedorUno .cards .card h3{
+    color: #E30032;
+}
+
+.seccionCuatro{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionCuatro .contenedorUno h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+.seccionCuatro .contenedorUno{
+    background-color: rgba(165, 165, 165, 0.062);
+    width: 80%;
+    padding: 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.seccionCuatro .contenedorUno .contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seccionCuatro .contenedorUno .contacto input,
+.seccionCuatro .contenedorUno .contacto textarea,
+.seccionCuatro .contenedorUno .contacto button{
+    color: aliceblue;
+    padding: 20px;
+    resize: none;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #E30032;
+}
+
+.seccionCuatro .contenedorUno .contacto button{
+    background-color: #E30032;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.seccionCuatro .contenedorUno .contacto button:hover{
+    background-color: aliceblue;
+    color: #E30032;
+    transition: all .4s ease;
+}
+
+.seccionCinco{
+    background-color: #E30032;
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 80px;
+}
+
+.seccionCinco .footer{
+    text-align: center;
+    padding: 2%;
+}
